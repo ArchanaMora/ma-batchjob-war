@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+  <wb-module deploy-name="ma-batchjob-war">
+    <wb-resource deploy-path="/" source-path="src/main/webapp"/>
+        <dependent-module archiveName="ma-stellent-jar-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ma-stellent-jar/ma-stellent-jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ma-framework-jar-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ma-framework-jar/ma-framework-jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ma-persistence-jar-1.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ma-persistence-jar/ma-persistence-jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    <property name="java-output-path" value="/target/classes"/>
+        <property name="context-root" value="ma-batchjob-war"/>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+  </wb-module>
+</project-modules>
