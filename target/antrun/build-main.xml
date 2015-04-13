@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="C:\Users\AC55190\Documents\Aggrgation_Layer\BuildForge\MA-BatchJob-temp\ma-batchjob-war\target\classes" overwrite="true" failonerror="false">
+    <fileset dir="C:\Users\AC55190\Documents\Aggrgation_Layer\BuildForge\MA-BatchJob-temp\ma-batchjob-war\target\classes">
+      <exclude name="**/*.class"/>
+    </fileset>
+    <mapper to="\1\.\2" from="^(.*)-LOCAL\.(.*)$$" type="regexp"/>
+  </copy>
+</target>
+</project>
